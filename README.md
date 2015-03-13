@@ -1,2 +1,5 @@
 # Blackwater-P
-Blackwater PHP Plugin
+
+Blackwater PHP plugin.
+
+PHP WebSocket library based on WAMP and Ratchet
