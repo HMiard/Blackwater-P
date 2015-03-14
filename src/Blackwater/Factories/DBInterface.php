@@ -36,6 +36,7 @@ class DBInterface
 
     public function __construct($parameters, $serverName){
 
+        $this->serverName = $serverName;
         if (empty($parameters)){
             $this->say("Empty database credentials !");
             die();
@@ -50,7 +51,6 @@ class DBInterface
         }catch (\PDOException $e){
             die("Error : ".$e->getMessage());
         }
-        $this->serverName = $serverName;
         $this->say($this->serverName." DBInterface built successfully ! Specializing...");
     }
 
